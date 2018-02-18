@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/langauge_simple_list_item_text1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minHeight="@dimen/list_item_height"
+    android:background="@color/tan_background">
+
+    <ImageView
+        android:id="@+id/language_image_view"
+        android:layout_width="@dimen/list_item_height"
+        android:layout_height="@dimen/list_item_height"
+        android:layout_alignParentLeft="true"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/language_text_view_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_item_height"
+        android:layout_toRightOf="@id/language_image_view"
+        android:paddingLeft="@dimen/activity_side_padding">
+
+        <TextView
+            android:id="@+id/language_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="bottom"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:paddingTop="@dimen/activity_side_padding"
+            android:textSize="18sp"
+            tools:text="Ondu" />
+
+        <TextView
+            android:id="@+id/english_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="top"
+            android:textColor="#FFFFFF"
+            tools:text="One"
+            android:textSize="18sp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
